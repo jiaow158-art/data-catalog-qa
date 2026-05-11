@@ -1,0 +1,3 @@
+database_name,table_name,display_name,description,table_type,partition_key,partition_freq,primary_keys,owner,tags,business_scenarios
+dw,dw.dwd_order_info,订单明细宽表,存储每笔订单的明细信息，是订单主题的核心宽表,dwd,dt,daily,"[""order_id""]",张三,"[""核心表"",""订单""]",适用于订单量分析、GMV计算、用户购买行为分析
+dw,dw.dim_user,用户维度表,用户基础信息和画像标签的维度表,dim,dt,daily,"[""user_id""]",李四,"[""维度表"",""用户""]",适用于用户画像分析、用户分层、新老用户分析

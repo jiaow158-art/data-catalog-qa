@@ -1,0 +1,4 @@
+upstream_table,downstream_table,relation_desc
+dw.ods_order_info,dw.dwd_order_info,ODS原始数据清洗加工为DWD明细
+dw.dwd_order_info,dw.dws_daily_sales,订单明细聚合为每日销售汇总
+dw.dim_user,dw.dwd_order_info,用户维度关联到订单明细

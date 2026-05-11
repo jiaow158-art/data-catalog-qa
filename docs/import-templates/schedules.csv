@@ -1,0 +1,4 @@
+task_name,task_type,schedule_cron,schedule_desc,owner,last_success_time,status,target_tables
+dwd_order_info_daily,spark,0 3 * * *,每天凌晨3:00,张三,2026-05-09T03:15:00Z,normal,dw.dwd_order_info
+dim_user_daily,hive_sql,0 2 * * *,每天凌晨2:00,李四,2026-05-09T02:10:00Z,normal,dw.dim_user
+dws_daily_sales_report,spark,0 5 * * *,每天凌晨5:00,王五,2026-05-09T05:20:00Z,normal,dw.dws_daily_sales

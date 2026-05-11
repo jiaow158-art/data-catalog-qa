@@ -1,0 +1,6 @@
+table_name,column_name,display_name,data_type,description,is_primary_key,is_nullable,enum_values,calculation_rule,source_info,sort_order
+dw.dwd_order_info,order_id,订单ID,bigint,订单唯一标识，由交易系统生成,TRUE,FALSE,,,来自交易系统订单表,1
+dw.dwd_order_info,user_id,用户ID,bigint,用户唯一标识，关联dim_user表,FALSE,FALSE,,,来自交易系统订单表,2
+dw.dwd_order_info,pay_amount,支付金额,"decimal(20,2)",用户实际支付金额，含优惠抵扣,FALSE,FALSE,,pay_amount = order_amount - discount_amount,来自交易系统订单表.order_amount和discount_amount计算,3
+dw.dwd_order_info,order_status,订单状态,string,订单当前状态,FALSE,TRUE,"[""待支付"",""已支付"",""已发货"",""已完成"",""已取消""]",,来自交易系统订单表.status,4
+dw.dwd_order_info,dt,数据日期,string,数据分区日期，格式yyyyMMdd,FALSE,FALSE,,,系统分区字段,99
