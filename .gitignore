@@ -35,6 +35,9 @@ backend/alembic/versions/__pycache__/
 node_modules/
 dist/
 
+# SQLite
+*.db
+
 # Test
 .pytest_cache/
 .coverage
